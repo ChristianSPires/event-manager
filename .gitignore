@@ -1,0 +1,74 @@
+# Documentação
+HELP.md
+
+# Diretórios de build
+target/
+build/
+out/
+
+# Maven
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Gradle
+.gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# IDEs
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.metadata
+bin/
+tmp/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Arquivos de log e temporários
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Arquivos de pacotes
+*.jar
+*.war
+*.ear
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.*.local
+
+# Docker
+docker-compose.override.yml
