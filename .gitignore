@@ -8,6 +8,7 @@ HELP.md
 # -----------------------------
 /backend/target/
 .mvn/wrapper/maven-wrapper.jar
+/backend/.env
 
 # -----------------------------
 # Frontend - Angular / Node.js
