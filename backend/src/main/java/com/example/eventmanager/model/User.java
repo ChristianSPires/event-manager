@@ -7,7 +7,6 @@ import lombok.*;
 @Table(name = "users")
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
 public class User {
 
     @Id
@@ -18,4 +17,7 @@ public class User {
 
     @Column(unique = true, nullable = false)
     private String email;
+
+    @Column(name = "profile_picture")
+    private String profilePicture;
 }

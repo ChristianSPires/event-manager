@@ -1,24 +1,44 @@
+# -----------------------------
 # Documentação
+# -----------------------------
 HELP.md
 
-# Diretórios de build
-target/
-build/
-out/
-
-# Maven
+# -----------------------------
+# Backend - Maven
+# -----------------------------
+/backend/target/
 .mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+/backend/.env
 
-# Gradle
+# -----------------------------
+# Frontend - Angular / Node.js
+# -----------------------------
+/frontend/node_modules/
+frontend/dist/
+/frontend/.angular/
+frontend/package-lock.json
+
+# -----------------------------
+# Gradle (caso use em algum ponto)
+# -----------------------------
 .gradle/
-build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-# IDEs
-### STS ###
+# -----------------------------
+# IDEs e ferramentas de build
+# -----------------------------
+
+# VS Code
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Spring Tool Suite (STS)
 .apt_generated
 .classpath
 .factorypath
@@ -27,48 +47,47 @@ build/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea/
-*.iws
-*.iml
-*.ipr
-
-### Eclipse ###
+# Eclipse
 .metadata
 bin/
 tmp/
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 
-### VS Code ###
-.vscode/
-
-# Arquivos de sistema operacional
-.DS_Store
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Arquivos de log e temporários
+# -----------------------------
+# Arquivos temporários e sistema
+# -----------------------------
 *.log
 *.tmp
 *.swp
 *.swo
 
-# Arquivos de pacotes
+# Sistema operacional
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# -----------------------------
+# Arquivos de pacotes compilados
+# -----------------------------
 *.jar
 *.war
 *.ear
 
-# Arquivos de ambiente
+# -----------------------------
+# Arquivos sensíveis
+# -----------------------------
 .env
 .env.local
 .env.*.local
 
+# -----------------------------
 # Docker
-docker-compose.override.yml
+# -----------------------------
+docker-compose*.yml
